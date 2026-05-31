@@ -1,135 +1,146 @@
-# Mobile-Robot-Localization
+# Mobile Robot Localization using Artificial Intelligence
 
+## Project Overview
 
-Project Title
+This project implements a Mobile Robot Localization system using core Artificial Intelligence concepts covered in the Computational Foundations for Artificial Intelligence (CFAI) course.
 
-Mobile Robot Localization using Search, CSP, Decision Making, and Bayesian Reasoning
+The robot operates in a 2D grid environment and estimates its position using sensor observations, probabilistic reasoning, constraint satisfaction, and decision-making techniques. Once the robot is localized with sufficient confidence, path planning is performed using search algorithms.
 
+---
 
+## Objectives
 
-## INTRODUCTION: 
-Mobile Robot Localization is the process by which a robot estimates its position in an environment using:
-* Observations from sensors
-* Probabilistic motion updates
-* Belief/state estimation
-Instead of assuming perfect movement and perfect sensing, AI localization models uncertainty mathematically.
-This is a core topic in:
-* Artificial Intelligence
-* Robotics
-* Autonomous Vehicles
-* Self-driving systems
-* Drone navigation
+* Represent robot states and actions in a grid environment.
+* Perform path planning using graph search algorithms.
+* Apply Constraint Satisfaction Problems (CSP) for candidate state elimination.
+* Implement Bayesian reasoning for localization under uncertainty.
+* Use a utility-based decision agent for action selection.
+* Integrate all modules into a complete AI localization pipeline.
 
+---
 
-## ABSTRACT:
-Mobile Robot Localization is a key concept in Artificial Intelligence that enables a robot to estimate its position in an environment under uncertain conditions. This project presents a conceptual study of probabilistic localization using belief states, state transitions, and sensor observations rather than physical robotic hardware. The robot continuously updates its belief about its location based on movement and observation data.
-Since robot movements and sensor readings are often inaccurate, probabilistic models are used to handle uncertainty. The project focuses on Bayesian inference, motion models, and observation models to explain how intelligent systems estimate positions effectively. Localization techniques such as Markov Localization, Kalman Filters, and Particle Filters are also discussed. Applications include autonomous vehicles, drones, warehouse robots, and service robots. This project demonstrates how probabilistic reasoning helps autonomous systems make reliable decisions in dynamic environments.
+## AI Concepts Used
 
+### CO1 – Problem Formulation & Representation
 
+* State Space Representation
+* PEAS Framework
+* Transition Model
+* Goal Test
 
+### CO2 – Graph Search Algorithms
 
-## ALGORITHM OF THE PROJECT:
-Initialize Environment
-         ↓
-Generate Candidate States
-         ↓
-Read Sensor Data
-         ↓
+* Breadth First Search (BFS)
+* Depth First Search (DFS)
+* Uniform Cost Search (UCS)
+* A* Search
+
+### CO3 – Constraint Satisfaction Problem (CSP)
+
+* Candidate State Elimination
+* Backtracking
+* MRV and LCV Heuristics
+
+### CO4 – Decision Making Agent
+
+* Utility-Based Agent
+* Greedy Action Selection
+* Information Gain
+
+### CO5 – Reasoning Under Uncertainty
+
+* Bayes Filter
+* Belief State Update
+* Sensor Noise Modeling
+
+### CO6 – Integrated AI Pipeline
+
+* CSP + Bayes Filter + Decision Agent + A* Search
+
+---
+
+## Project Structure
+
+Mobile-Robot-Localization-CFAI/
+
+├── CO1_representation.py
+
+├── CO2_search.py
+
+├── CO3_csp.py
+
+├── CO4_decision_agent.py
+
+├── CO5_bayes_filter.py
+
+├── CO6_integrated.py
+
+├── Project_Report.pdf
+
+├── PPT_Presentation.pptx
+
+└── README.md
+
+---
+
+## How to Run
+
+Run any module using Python:
+
+python CO1_representation.py
+
+python CO2_search.py
+
+python CO3_csp.py
+
+python CO4_decision_agent.py
+
+python CO5_bayes_filter.py
+
+python CO6_integrated.py
+
+---
+
+## System Workflow
+
+Sensor Reading
+↓
 CSP Pruning
-         ↓
+↓
 Bayes Filter Update
-         ↓
-Confidence ≥ 85% ?
-       /        \
-     No          Yes
-      |            |
-Decision Agent   A* Search
-      |            |
-Execute Action    Path Found
-      |            |
-      └────Repeat──┘
-         ↓
-        End
-
-
-
-## CO WISE IMPLEMENTATION: 
-## CO1 – Problem Formulation & Representation
-Aim
-
-To represent the mobile robot localization problem using states, actions, transition models, and goal conditions.
-
-Concepts Used
-State Representation: (x, y, heading)
-Actions: FORWARD, TURN_LEFT, TURN_RIGHT
-PEAS Framework
-Transition Model
-Goal Test (confidence ≥ 85%)
-
-
-## CO2 – Graph Search Algorithms
-Aim
-
-To find an optimal path for the robot after localization.
-
-Concepts Used
-BFS for shortest path by moves
-DFS for deep exploration
-UCS for minimum-cost path
-A* using Manhattan Distance heuristic
-Path Planning and Cost Analysis
-
-
-## CO3 – Constraint Satisfaction Problem (CSP)
-Aim
-
-To eliminate impossible robot positions using sensor observations and map constraints.
-
-Concepts Used
-Variables: Free cells in the grid
-Domain: Possible robot locations
-Constraints: Sensor readings
-Backtracking Search
-MRV and LCV Heuristics
-Constraint Propagation
-
-
-## CO4 – Decision Making Agent
-Aim
-
-To select the best action that maximizes information gain and minimizes movement cost.
-
-Concepts Used
-Utility-Based Agent
-Entropy Reduction
-Greedy One-Step Lookahead
-Utility Function
-Minimax and Alpha-Beta Pruning
-
-
-## CO5 – Reasoning Under Uncertainty
-Aim
-
-To estimate the robot's position under uncertain movements and noisy sensor readings.
-
-Concepts Used
-Bayes Filter
-Prediction Step
-Correction Step
-Belief State
-Markov Assumption
-Sensor Noise Model
-
-
-## CO6 – Integrated AI Pipeline
-Aim
-
-To combine all AI techniques into a complete robot localization and navigation system.
-
-Concepts Used
-State Representation
-CSP-based State Elimination
-Bayes Filter Localization
+↓
 Decision Agent
+↓
+Execute Action
+↓
+Localization Check
+↓
 A* Path Planning
-Explainable Reasoning Trace
+
+---
+
+## Applications
+
+* Autonomous Vehicles
+* Warehouse Robots
+* Delivery Robots
+* Rescue Robots
+* Indoor Navigation Systems
+
+---
+
+## Technologies Used
+
+* Python 3.x
+* Artificial Intelligence Algorithms
+* Graph Search Techniques
+* Bayesian Reasoning
+* Constraint Satisfaction
+
+---
+
+
+## Course Details
+
+Course: Computational Foundations for Artificial Intelligence (CFAI)
+
