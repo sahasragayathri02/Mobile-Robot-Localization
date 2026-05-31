@@ -21,6 +21,13 @@ This is a core topic in:
 * Drone navigation
 
 
+## ABSTRACT:
+Mobile Robot Localization is a key concept in Artificial Intelligence that enables a robot to estimate its position in an environment under uncertain conditions. This project presents a conceptual study of probabilistic localization using belief states, state transitions, and sensor observations rather than physical robotic hardware. The robot continuously updates its belief about its location based on movement and observation data.
+Since robot movements and sensor readings are often inaccurate, probabilistic models are used to handle uncertainty. The project focuses on Bayesian inference, motion models, and observation models to explain how intelligent systems estimate positions effectively. Localization techniques such as Markov Localization, Kalman Filters, and Particle Filters are also discussed. Applications include autonomous vehicles, drones, warehouse robots, and service robots. This project demonstrates how probabilistic reasoning helps autonomous systems make reliable decisions in dynamic environments.
+
+
+
+
 ## ALGORITHM OF THE PROJECT:
 Initialize Environment
          ↓
