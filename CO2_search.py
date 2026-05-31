@@ -1,27 +1,40 @@
-from collections import deque
+# CO3 - Constraint Satisfaction
 
-graph = {
-    'A':['B','C'],
-    'B':['D'],
-    'C':['E'],
-    'D':[],
-    'E':[]
-}
+GRID = [
+    [0,0,0],
+    [0,1,0],
+    [0,0,0]
+]
 
-def bfs(start,goal):
+sensor_observation = (1,1)
 
-    queue = deque([[start]])
+candidates = []
 
-    while queue:
+for i in range(3):
+    for j in range(3):
 
-        path = queue.popleft()
+        if GRID[i][j] == 0:
+            candidates.append((i,j))
 
-        node = path[-1]
+def satisfies_constraint(cell):
 
-        if node == goal:
-            return path
+    x,y = cell
 
-        for neighbor in graph[node]:
-            queue.append(path+[neighbor])
+    return (x+y)%2 == 0
 
-print("BFS:", bfs('A','E'))
+def backtracking(candidates):
+
+    solutions = []
+
+    for cell in candidates:
+
+        if satisfies_constraint(cell):
+            solutions.append(cell)
+
+    return solutions
+
+print("\nPossible Positions:")
+print(candidates)
+
+print("\nValid Positions After CSP:")
+print(backtracking(candidates))
