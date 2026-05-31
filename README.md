@@ -6,7 +6,7 @@ Project Title
 Mobile Robot Localization using Search, CSP, Decision Making, and Bayesian Reasoning
 
 
-CO1 – Problem Formulation & Representation
+## CO1 – Problem Formulation & Representation
 Aim
 
 To represent the mobile robot localization problem using states, actions, transition models, and goal conditions.
@@ -19,7 +19,7 @@ Transition Model
 Goal Test (confidence ≥ 85%)
 
 
-CO2 – Graph Search Algorithms
+## CO2 – Graph Search Algorithms
 Aim
 
 To find an optimal path for the robot after localization.
@@ -32,7 +32,7 @@ A* using Manhattan Distance heuristic
 Path Planning and Cost Analysis
 
 
-CO3 – Constraint Satisfaction Problem (CSP)
+## CO3 – Constraint Satisfaction Problem (CSP)
 Aim
 
 To eliminate impossible robot positions using sensor observations and map constraints.
@@ -46,7 +46,7 @@ MRV and LCV Heuristics
 Constraint Propagation
 
 
-CO4 – Decision Making Agent
+## CO4 – Decision Making Agent
 Aim
 
 To select the best action that maximizes information gain and minimizes movement cost.
@@ -59,7 +59,7 @@ Utility Function
 Minimax and Alpha-Beta Pruning
 
 
-CO5 – Reasoning Under Uncertainty
+## CO5 – Reasoning Under Uncertainty
 Aim
 
 To estimate the robot's position under uncertain movements and noisy sensor readings.
@@ -73,7 +73,7 @@ Markov Assumption
 Sensor Noise Model
 
 
-CO6 – Integrated AI Pipeline
+## CO6 – Integrated AI Pipeline
 Aim
 
 To combine all AI techniques into a complete robot localization and navigation system.
