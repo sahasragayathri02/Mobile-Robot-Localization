@@ -6,6 +6,45 @@ Project Title
 Mobile Robot Localization using Search, CSP, Decision Making, and Bayesian Reasoning
 
 
+
+## INTRODUCTION: 
+Mobile Robot Localization is the process by which a robot estimates its position in an environment using:
+* Observations from sensors
+* Probabilistic motion updates
+* Belief/state estimation
+Instead of assuming perfect movement and perfect sensing, AI localization models uncertainty mathematically.
+This is a core topic in:
+* Artificial Intelligence
+* Robotics
+* Autonomous Vehicles
+* Self-driving systems
+* Drone navigation
+
+
+## ALGORITHM OF THE PROJECT:
+Initialize Environment
+         ↓
+Generate Candidate States
+         ↓
+Read Sensor Data
+         ↓
+CSP Pruning
+         ↓
+Bayes Filter Update
+         ↓
+Confidence ≥ 85% ?
+       /        \
+     No          Yes
+      |            |
+Decision Agent   A* Search
+      |            |
+Execute Action    Path Found
+      |            |
+      └────Repeat──┘
+         ↓
+        End
+
+## CO WISE IMPLEMENTATION: 
 ## CO1 – Problem Formulation & Representation
 Aim
 
