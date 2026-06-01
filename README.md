@@ -119,6 +119,21 @@ A* Path Planning
 
 ---
 
+## Algorithms used
+
+• Breadth First Search (BFS)
+• Depth First Search (DFS)
+• Uniform Cost Search (UCS)
+• A* Search
+• Constraint Satisfaction Problem (CSP)
+• Backtracking Search
+• Bayes Filter
+• Belief State Update
+• Utility-Based Decision Making
+• Integrated AI Localization Framework
+
+---
+
 ## Applications
 
 * Autonomous Vehicles
